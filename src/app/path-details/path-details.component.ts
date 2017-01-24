@@ -30,4 +30,8 @@ export class PathDetailsComponent implements OnInit {
     console.log(this.pathToDisplay);
   }
 
+  nextPath(id: number) {
+    this.pathToDisplay = this.pathService.getPathById(id);
+  }
+
 }

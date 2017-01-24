@@ -11,5 +11,7 @@ export const PATHS: Path[] = [
     [
       new Choice("Do something cool", 2),
       new Choice("Do something else cool", 3)
-    ]) 
+    ]),
+  new Path(2, "Test", []),
+  new Path(3, "Also a test", []) 
 ]

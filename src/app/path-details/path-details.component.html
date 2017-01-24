@@ -1,1 +1,4 @@
 {{pathToDisplay.description}}<br>
+<div *ngFor="let choice of pathToDisplay.options">
+  <div (click)="nextPath(choice.choiceId)">{{choice.choiceDescription}}</div>
+</div>
