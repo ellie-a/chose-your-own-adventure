@@ -1,6 +1,6 @@
 export class Choice {
   constructor(
-    public description: string,
-    public id: number)
+    public choiceDescription: string,
+    public choiceId: number)
     { }
 }

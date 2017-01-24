@@ -3,15 +3,18 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
+import { PathService } from './path.service';
 
 
 import { AppComponent } from './app.component';
 import { StartGameComponent } from './start-game/start-game.component';
+import { PathDetailsComponent } from './path-details/path-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartGameComponent
+    StartGameComponent,
+    PathDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,7 @@ import { StartGameComponent } from './start-game/start-game.component';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [PathService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
