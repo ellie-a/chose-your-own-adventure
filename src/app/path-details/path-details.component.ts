@@ -3,6 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Path } from '../path.model';
 import { PathService } from '../path.service';
 import { Location } from '@angular/common';
+import { User } from '../user.model';
+import { CurrentUser } from '../current-user';
 
 @Component({
   selector: 'app-path-details',
@@ -15,6 +17,7 @@ export class PathDetailsComponent implements OnInit {
   // paths: Path[];
   pathId: number;
   pathToDisplay: Path;
+  user: User;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,7 +30,7 @@ export class PathDetailsComponent implements OnInit {
       this.pathId = parseInt(urlParam['id']);
     });
     this.pathToDisplay = this.pathService.getPathById(this.pathId);
-    console.log(this.pathToDisplay);
+    this.user = CurrentUser[0];
   }
 
   nextPath(id: number) {

@@ -11,6 +11,7 @@ import { CurrentUser } from '../current-user';
 export class UserFormComponent  {
 
   submitForm(name: string, age: number, alignment: string){
+    CurrentUser.length = 0;
     CurrentUser.push(new User(name, age, alignment));
   }
 
