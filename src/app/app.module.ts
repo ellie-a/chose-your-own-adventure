@@ -9,12 +9,14 @@ import { PathService } from './path.service';
 import { AppComponent } from './app.component';
 import { StartGameComponent } from './start-game/start-game.component';
 import { PathDetailsComponent } from './path-details/path-details.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartGameComponent,
-    PathDetailsComponent
+    PathDetailsComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<form class="user" >
+  <label for="name">What's your name?</label>
+  <input  type="text" #newName>
+  <label for="age">What's your age?</label>
+  <input  type="number" #newAge>
+  <label for="alignment">What's your self moral standing?</label>
+  <input type="text" #newAlignment>
+  <button type="button" (click)="submitForm(newName.value, newAge.value, newAlignment.value)">Submit</button>
+</form>

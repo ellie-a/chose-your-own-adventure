@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Path } from '../path.model';
 import { PathService } from '../path.service';
 import { Router } from '@angular/router';
+import { UserFormComponent } from '../user-form/user-form.component';
 
 @Component({
   selector: 'app-start-game',
   templateUrl: './start-game.component.html',
-  styleUrls: ['./start-game.component.css'],
+  styleUrls: ['./start-game.component.scss'],
   providers: [PathService]
 })
 export class StartGameComponent implements OnInit {
