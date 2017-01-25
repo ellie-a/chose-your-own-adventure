@@ -1,1 +1,15 @@
+.start {
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  letter-spacing: 3px;
+  font-size: 1.2em;
+}
 
+.start:hover {
+  transition-duration: 0.4s;
+  color: #EE2A1B;
+  text-shadow: 4px 4px 5px #8A0707;
+  transform: scale(1.1);
+}

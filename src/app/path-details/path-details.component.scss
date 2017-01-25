@@ -1,0 +1,38 @@
+.game {
+  margin: 5%;
+  letter-spacing: 3px;
+  line-height: 180%;
+  flex-flow: column wrap;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  flex-basis: auto;
+  //border: 5px solid blue;
+  .description {
+    flex: 1 100%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .forloop {
+    margin-top: 5%;
+    flex: 2 40%;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    //border: 5px dotted yellow;
+
+    .choices {
+      // max-width: 70%;
+    }
+
+    .choices:hover {
+      transition-duration: 0.4s;
+      color: #EE2A1B;
+      text-shadow: 4px 4px 5px #8A0707;
+      transform: scale(1.1);
+    }
+    }
+}

@@ -9,7 +9,7 @@ import { CurrentUser } from '../current-user';
 @Component({
   selector: 'app-path-details',
   templateUrl: './path-details.component.html',
-  styleUrls: ['./path-details.component.css'],
+  styleUrls: ['./path-details.component.scss'],
   providers: [PathService]
 })
 

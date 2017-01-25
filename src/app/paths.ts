@@ -60,7 +60,7 @@ export const PATHS: Path[] = [
   ]),
 
   new Path(TANKLID, "You remove the lid of the tank and see a key attached to a heavy brick blocking the pump. You remove the brick from the tank to use the key on your bindings, and the toilet pump activates now that it is no longer obstructed. The toilet flushes and a glimpse of a key catches your eye as it disappears into the U-bend. You may have sealed someone's fate. You run over to the door and try the key on the door, but it does not fit. Horror wells up within you and you feel faint. You black out as you realize your only chance to escape might have been lost forever.", [
-    new Choice("GAME OVER", START)
+    new Choice("WAKE UP", START)
   ]),
 
   new Path(MURKYWATER, "You reach into the bowl and retrieve a key with a peculiar shape. It doesn't appear to fit the chain binding your ankle, but it might help the person across from you. You tell them what you found and he begs for the key. He promises to help you escape once he is free. You toss him the key. After he frees himself, he helps you escape from your bindings and you try the door to the room you are trapped in. It is locked from the inside, but the key you retrieved from the bowl also fits the lock of the door perfectly. You two live happily ever after.", [

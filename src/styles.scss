@@ -1,12 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 $main-font : 'Creepster', cursive;
 
+@keyframes pulse {
+  0% {opacity: .7;}
+  100% {opacity: 0;}
+}
+
 h1 {
   font-family: $main-font;
-  // background: -webkit-linear-gradient(#eee, #333);
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
 }
 button {
   font-family: $main-font;
+}
+
+body {
+  background-color: black;
+  color: white;
+  .saw {
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/images/saw3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: pulse;
+    animation-duration: 3s;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: infinite;
+  }
 }

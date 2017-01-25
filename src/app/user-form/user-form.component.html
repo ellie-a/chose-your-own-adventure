@@ -1,9 +1,17 @@
-<form class="user" >
-  <label for="name">What's your name?</label>
-  <input  type="text" #newName>
-  <label for="age">What's your age?</label>
-  <input  type="number" #newAge>
-  <label for="alignment">What's your self moral standing?</label>
-  <input type="text" #newAlignment>
-  <button type="button" (click)="submitForm(newName.value, newAge.value, newAlignment.value)">Submit</button>
-</form>
+<div class="form">
+  <form class="user" >
+    <label for="name">What's your <span class="red">name</span>?</label>
+    <br>
+    <input  type="text" #newName>
+    <br>
+    <label for="age">What's your <span class="red">age</span>?</label>
+    <br>
+    <input  type="number" #newAge>
+    <br>
+    <label for="alignment">What's your self <span class="red">moral</span> standing?</label>
+    <br>
+    <input type="text" #newAlignment>
+    <br>
+    <button type="button" (click)="submitForm(newName.value, newAge.value, newAlignment.value)">Submit</button>
+  </form>
+</div>
