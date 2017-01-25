@@ -37,4 +37,23 @@ export class PathDetailsComponent implements OnInit {
     this.pathToDisplay = this.pathService.getPathById(id);
   }
 
+  adjustScore(result: string) {
+    switch(result) {
+      case "good":
+        this.user.score += 10;
+        break;
+      case "bad":
+        this.user.score -= 10;
+        break;
+      case "nochange":
+        break;
+      case "reset":
+        this.user.score = 0;
+        break;
+      default:
+        alert("Invalid result");
+        break;
+    }
+  }
+
 }

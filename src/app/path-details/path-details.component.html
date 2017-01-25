@@ -1,12 +1,14 @@
 <div class="saw">
 </div>
-{{user.name}} // {{user.age}} // {{user.alignment}} // Score: {{user.hp}}
+<div class="userstats">
+  Name: {{user.name}} || Age: {{user.age}} || Alignment: {{user.alignment}} <br> <div class="score">Score: {{user.score}}</div>
+</div>
 <br>
 <hr>
 <div class="game">
   <span class="description">  {{pathToDisplay.description}}<br></span>
 
   <div class="forloop" *ngFor="let choice of pathToDisplay.options">
-    <div class="choices" (click)="nextPath(choice.choiceId)">{{choice.choiceDescription}}</div>
+    <div class="choices" (click)="nextPath(choice.choiceId);adjustScore(choice.choiceResult)">{{choice.choiceDescription}}</div>
   </div>
 </div>
