@@ -39,7 +39,7 @@ export const PATHS: Path[] = [
     new Choice("Try to escape", TRYTOESCAPE, BAD)
   ]),
 
-  new Path(TALKTOPERSON, "You get the attention of the person accross from you. They start to question: 'WHO ARE YOU?!' ", [
+  new Path(TALKTOPERSON, "You get the attention of the person accross from you. They start to question: 'WHO ARE YOU?! WHOS IS THAT?!' They shakingly point to aorpse holding a revolver and a microcassette recorder with a tape inside.", [
     new Choice("Calmy explain the situation", PLAYTAPE, GOOD),
     new Choice("Yell back at them", TRYTOESCAPE, BAD)
   ]),
